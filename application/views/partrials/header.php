@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?php echo base_url('Arsha/assets/img/favicon.png');?>" rel="icon">
+  <link href="<?php echo base_url('Arsha/assets/img/mask.png');?>" rel="icon">
   <link href="<?php echo base_url('Arsha/assets/img/apple-touch-icon.png');?>" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -42,17 +42,12 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Covid19</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+      <h1 class="logo me-auto"><a href="<?php echo base_url('/');?>">Covid19</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#services">Vaksin</a></li>
         <?php
         if($this->session->userdata('is_login') == TRUE){
         ?>
@@ -69,8 +64,5 @@
         }
         ?>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
     </div>
-  </header><!-- End Header -->
+  </header>

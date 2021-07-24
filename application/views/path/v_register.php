@@ -4,11 +4,11 @@
     <form method = "POST" action="<?php echo base_url('Register/proses_register'); ?>">
     <div class="form-group">
         <label for="exampleInputEmail1">username</label>
-        <input type="text" class="form-control" name="username" placeholder="Enter email">
+        <input type="text" class="form-control" name="username" placeholder="Enter Username">
     </div>
     <div class="form-group">
         <label for="exampleInputEmail1">Email</label>
-        <input type="email" class="form-control" name="email" placeholder="Enter email">
+        <input type="email" class="form-control" name="email" placeholder="Enter Email">
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>

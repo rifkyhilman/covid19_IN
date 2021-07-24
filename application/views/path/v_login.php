@@ -12,7 +12,12 @@
       <label for="exampleInputPassword1" class="form-label">Password</label>
       <input type="password" name="password" class="form-control" id="exampleInputPassword1">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <div class="mt-3">
+        <P>Belum memilik Account ? <a href="<?php echo base_url('register'); ?>">Register</a></P>
+      </div>
+    </div>
   </form>
 </div>
 

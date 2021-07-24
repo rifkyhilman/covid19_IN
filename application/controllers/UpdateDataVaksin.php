@@ -45,7 +45,7 @@ class UpdateDataVaksin extends CI_Controller{
 
         if($this->form_validation->run() === FALSE){
 			
-			redirect('UpdateDataVaksin/form_edit/');
+			redirect('UpdateDataVaksin/form_edit/', $id);
 
 		}else {
 			$this->M_vaksin->update_data();

@@ -1,7 +1,6 @@
 <?php $this->load->view('partrials/header'); ?>
 
 <div class="container mt-5 mb-5">
-    <a class="btn btn-success" href="<?php echo base_url('registervaksin');?>">Add +</a>
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -34,5 +33,8 @@
     ?>
   </tbody>
 </table>
+<div class="d-flex justify-content-end">
+    <a class="btn btn-success" href="<?php echo base_url('registervaksin');?>">Add +</a>
+</div>
 </div>
 <?php $this->load->view('partrials/footer'); ?>

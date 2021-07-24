@@ -1,7 +1,7 @@
 <?php $this->load->view('partrials/header'); ?>
 
 <div class="container mt-5">
-    <form method = "POST" action="<?php echo base_url('UpdateDataVaksin/updatedata'); ?>">
+    <form method = "POST" action="<?php echo base_url('UpdateDataVaksin/updatedata/'.$db->id); ?>">
     <div class="form-group">
         <label for="exampleInputEmail1">No.KTP</label>
         <input type="text" class="form-control" name="ktp" value="<?php echo set_value('ktp', $db->ktp); ?>" placeholder="Masukan Nomor KTP">

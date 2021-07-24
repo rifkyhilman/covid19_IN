@@ -22,9 +22,10 @@ class M_vaksin extends CI_Model{
 		return $query->row();
     }
 
-    function update_data(){
+    function update_data(){		
+
         $kondisi = ['id' => $this->input->post('id')];
-		
+
 		$datanew = [
 					'ktp' => $this->input->post('ktp'),
 					'kk' => $this->input->post('kk'),

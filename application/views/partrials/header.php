@@ -42,7 +42,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="<?php echo base_url('/');?>">Covid19</a></h1>
+      <h1 class="logo me-auto"><a href="<?php echo base_url('/');?>">fovid19</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>

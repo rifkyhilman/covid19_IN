@@ -1,7 +1,7 @@
 <?php $this->load->view('partrials/header'); ?>
 
-<div class="container mt-5">
-    <a class="btn btn-danger" href="<?php echo base_url('registervaksin');?>">Add +</a>
+<div class="container mt-5 mb-5">
+    <a class="btn btn-success" href="<?php echo base_url('registervaksin');?>">Add +</a>
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -26,8 +26,8 @@
                 <td><?php echo $vaksin[$i]->usia; ?></td>
                 <td><?php echo $vaksin[$i]->rumahsakit; ?></td>
                 <td>
-                    <button type="button" class="btn btn-outline-info">Edit</button>
-                    <a href="<?php echo base_url('DataVaksin/proses_hapusdata/'.$vaksin[$i]->id) ?>" onclick="return confirm('Anda yakin hapus ?')"><button type="button" class="btn btn-outline-danger ml-5 " >Delete</button></a>
+                    <a class="btn btn-outline-primary" href="<?php echo base_url('UpdateDataVaksin/form_edit/'.$vaksin[$i]->id) ?>" type="button" class="btn btn-outline-info">Edit</a>
+                    <a class="btn btn-outline-danger ml-5" href="<?php echo base_url('DataVaksin/proses_hapusdata/'.$vaksin[$i]->id) ?>" onclick="return confirm('Anda yakin hapus ?')">Delete</a>
                 </td>
             </tr>
     <?php	}
@@ -35,3 +35,4 @@
   </tbody>
 </table>
 </div>
+<?php $this->load->view('partrials/footer'); ?>

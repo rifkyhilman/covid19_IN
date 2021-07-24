@@ -27,7 +27,7 @@
                 <td><?php echo $vaksin[$i]->rumahsakit; ?></td>
                 <td>
                     <button type="button" class="btn btn-outline-info">Edit</button>
-                    <a href="<?php echo base_url('Home/proses_hapusDataMahasiswa/'.$vaksin[$i]->id) ?>" onclick="return confirm('Anda yakin hapus ?')"><button type="button" class="btn btn-outline-danger ml-5 " >Delete</button></a>
+                    <a href="<?php echo base_url('DataVaksin/proses_hapusdata/'.$vaksin[$i]->id) ?>" onclick="return confirm('Anda yakin hapus ?')"><button type="button" class="btn btn-outline-danger ml-5 " >Delete</button></a>
                 </td>
             </tr>
     <?php	}

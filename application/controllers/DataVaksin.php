@@ -11,4 +11,10 @@ class DataVaksin extends CI_Controller{
 	
         $this->load->view('vaksin/v_listdata', array('vaksin'=>$data->result()));
     }
+
+    function proses_hapusdata($id){
+        $this->M_vaksin->hapus_data($id);
+		$this->session->set_flashdata('hapus_sukses','Data mahasiswa berhasil di hapus');
+		redirect('datavaksin');
+    }
 }
